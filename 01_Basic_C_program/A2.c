@@ -2,17 +2,30 @@
 
 int main()
 {
-    int num1, num2, sum;
+    int n, binary[32], i = 0;
 
-    printf("Enter first number: ");
-    scanf("%d", &num1);
+    printf("Enter a decimal number: ");
+    scanf("%d", &n);
 
-    printf("Enter second number: ");
-    scanf("%d", &num2);
+    if (n == 0)
+    {
+        printf("Binary = 0");
+        return 0;
+    }
 
-    sum = num1 + num2;
+    while (n > 0)
+    {
+        binary[i] = n % 2;
+        n = n / 2;
+        i++;
+    }
 
-    printf("Sum = %d\n", sum);
+    printf("Binary = ");
+
+    for (int j = i - 1; j >= 0; j--)
+    {
+        printf("%d", binary[j]);
+    }
 
     return 0;
 }
