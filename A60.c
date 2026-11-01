@@ -1,17 +1,14 @@
-//wap in c using  function no arg and with return value
-#include<stdio.h>
-int add();
-int add()
+#include<iostream>
+using namespace std;
+
+int main()
 {
-	int a,b;
-	printf("enter the value of a and b ");
-	scanf("%d %d",&a,&b);
-	return a+b;
-	}
-	int  main()
-	{
-		int res;
-		res = add();
-	    printf("Add = %d", res);
- 
-	}
+    int a[5] = {10,20,30,40,50};
+
+    for(int i=0; i<5; i++)
+    {
+        cout << a[i] << endl;
+    }
+
+    return 0;
+}
