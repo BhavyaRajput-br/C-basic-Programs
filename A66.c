@@ -1,11 +1,17 @@
-// wap to calculate volume of SPHERE 
-
+//wap in c program  to addition with args and no return value
 #include<stdio.h>
-int main ()
+void add(int*,int*);
+void add(int*a, int*b)
 {
-	float r, volume;
-	printf("enter the value of r:"); 
-	scanf("%f",&r);
-	volume = 1.33 * 3.14 * r * r * r;
-	printf("volume of sphere = %f", volume );
+	int sum;
+	sum=*a+*b;
+	printf("sum=%d",sum);
+	
 }
+void main()
+{
+	int a , b;
+	printf("enter the value of a and b");
+	scanf("%d%d", &a,&b);
+	add(&a,&b);
+	}
